@@ -1,21 +1,17 @@
 def using_push(array, string)
-  countries_in_western_africa = ["Benin", "Carpe Verde", "Gambia", "Liberia", "Mali"]
-  next_country = "Niger"
-  countries_in_western_africa.push(next_country)
+  array.push(string)
 end
 
 def using_unshift(array, string)
-  neighborhoods_in_northwest_brooklyn = ["Brooklyn Yards", "Cadman Plaza", "Clinton Hill", "Downtown Brooklyn", "DUMBO"]
-  new_neighborhood = "Brooklyn Heights"
-  neighborhoods_in_northwest_brooklyn.unshift(new_neighborhood)
+  array.unshift(string)
 end
 
 def using_pop(array)
   array.pop
 end
 
-def pop_with_args(argument)
-  argument.pop(2)
+def pop_with_args(array)
+  array.pop(2)
 end
 
 def using_shift(array)
@@ -41,11 +37,14 @@ end
 def using_flatten(array)
   array.flatten
 end
-
-def using_delete(array, string)
-  array.delete(string)
+  
+def using_delete(array, integer)
+  array.delete(integer)
 end
-
+  
 def using_delete_at(array, integer)
   array.delete_at(integer)
 end
+
+
+
